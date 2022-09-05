@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,8">
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_control">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding: 13% 0;
+border: 1px solid rgb(31, 118, 255);
+border-radius: 10px;
+background-color: rgb(31, 118, 255);
+color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+background-color: rgb(212, 212, 212);
+color: rgb(8, 0, 20);
+border: 1px solid rgb(212, 212, 212);
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="bt_inicio">
+            <property name="text">
+             <string>INICIO</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_registros">
+            <property name="text">
+             <string>REGISTROS</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_base_datos">
+            <property name="text">
+             <string>BASE DE DATOS</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>291</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>ENOC SOLANO</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_contenedor">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>32</number>
+            </property>
+            <widget class="QWidget" name="page_inicio">
+             <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,9">
+              <item>
+               <widget class="QFrame" name="frame_head_inicio">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+background-color: rgb(31, 118, 255);
+color: #fff;
+border-radius: 10px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>261</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_head_inicio">
+                   <property name="text">
+                    <string>INICIO</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>261</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_body_inicio">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="1">
+                  <spacer name="verticalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>88</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="0">
+                  <spacer name="horizontalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>96</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QFrame" name="frame_body_inicio_seleccionar_equipo_trabajar">
+                   <property name="styleSheet">
+                    <string notr="true">QFrame{
+border-radius: 10px;
+border: 1px solid rgb(212, 212, 212);
+background-color: rgb(212, 212, 212);
+}</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout">
+                    <item row="2" column="1">
+                     <spacer name="verticalSpacer_6">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="5" column="1">
+                     <spacer name="verticalSpacer_5">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>36</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="1" column="2">
+                     <spacer name="horizontalSpacer_6">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>39</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="0" column="1">
+                     <spacer name="verticalSpacer_4">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>36</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="1" column="0">
+                     <spacer name="horizontalSpacer_5">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>39</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QComboBox" name="comboBox_body_inicio_seleccionar">
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>IMM 1000</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>IMM 2000</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ATELLICA CH</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ATELLICA IM</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>DIMENSION</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ADVIA 2120</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>CA 660</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>CLINITEK ADVANTUS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>LIASION XL</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>CM 250</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>COUNTER XS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>COUNTER 19</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>FUJI 500</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>NOVUS</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLabel" name="label_body_inicio_seleccionar_equipo_trabajar">
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+border: 0;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>SELECCIONE EQUIPO A TRABAJAR</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QPushButton" name="bt_body_inicio_seleccionar_equipo_trabajar_bt">
+                      <property name="text">
+                       <string>Seleccionar</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <spacer name="horizontalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>96</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="2" column="1">
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>87</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_inicio_IMM_1000"/>
+            <widget class="QWidget" name="page_inicio_IMM_2000"/>
+            <widget class="QWidget" name="page_inicio_ATELLICA_CH"/>
+            <widget class="QWidget" name="page_inicio_ATELLICA_IM"/>
+            <widget class="QWidget" name="page_inicio_DIMENSION"/>
+            <widget class="QWidget" name="page_inicio_DIMENSION2"/>
+            <widget class="QWidget" name="page_inicio_DIMENSION3"/>
+            <widget class="QWidget" name="page_inicio_DIMENSION4"/>
+            <widget class="QWidget" name="page_8"/>
+            <widget class="QWidget" name="page_9"/>
+            <widget class="QWidget" name="page_2"/>
+            <widget class="QWidget" name="page_3"/>
+            <widget class="QWidget" name="page_4"/>
+            <widget class="QWidget" name="page"/>
+            <widget class="QWidget" name="page_registros">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="text">
+                 <string>PÁGINA REGISTROS</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_registros_IMM_1000"/>
+            <widget class="QWidget" name="page_registros_IMM_2000"/>
+            <widget class="QWidget" name="page_registros_ATELLICA_CH"/>
+            <widget class="QWidget" name="page_registros_ATELLICA_IM"/>
+            <widget class="QWidget" name="page_registros_DIMENSION"/>
+            <widget class="QWidget" name="page_registros_ADVIA_2120"/>
+            <widget class="QWidget" name="page_registros_CA_660"/>
+            <widget class="QWidget" name="page_registros_CLINITEK"/>
+            <widget class="QWidget" name="page_registros_ADVANTUS"/>
+            <widget class="QWidget" name="page_registros_LIASION_XL"/>
+            <widget class="QWidget" name="page_registros_CM_250"/>
+            <widget class="QWidget" name="page_registros_COUNTER_XS"/>
+            <widget class="QWidget" name="page_registros_COUNTER_19"/>
+            <widget class="QWidget" name="page_registros_FUJI_500"/>
+            <widget class="QWidget" name="page_registros_NOVUS"/>
+            <widget class="QWidget" name="page_base_datos">
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="text">
+                 <string>PÁGINA BASE DATOS</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_base_datos_IMM_1000"/>
+            <widget class="QWidget" name="page_30"/>
+            <widget class="QWidget" name="page_31"/>
+            <widget class="QWidget" name="page_32"/>
+            <widget class="QWidget" name="page_33"/>
+            <widget class="QWidget" name="page_34"/>
+            <widget class="QWidget" name="page_35"/>
+            <widget class="QWidget" name="page_36"/>
+            <widget class="QWidget" name="page_37"/>
+            <widget class="QWidget" name="page_38"/>
+            <widget class="QWidget" name="page_39"/>
+            <widget class="QWidget" name="page_40"/>
+            <widget class="QWidget" name="page_41"/>
+            <widget class="QWidget" name="page_29"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
